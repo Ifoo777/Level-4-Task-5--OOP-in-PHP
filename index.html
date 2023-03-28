@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Please fill in the following details:</h2>
+
+    <form action="mathsparser.php" method="post" name="userForm">
+      <label for="name"> Student Name: </label><br />
+      <input type="text" id="name" name="name" required />
+      <br /><br />
+      <label for="birth_year"
+        >Student Date of Birth: </label
+      ><br />
+      <input type="date" id="birth_year" name="birth_year" required />
+      <br /><br />
+      <label for="registration_year"
+        >Year of registration: </label
+      ><br />
+      <input type="number" id="registration_year" name="registration_year" min= "2000" max = "2023" required />
+      <br /><br />
+      <label for="registration_course">Course the student is registering for: </label><br />
+      <input type="text" id="registration_course" name="registration_course" required />
+      <br /><br />
+      
+      <label for="avg_grade">Average grade %: </label><br />
+      <input type="number" id="avg_grade" name="avg_grade" min= "0" max = "100" required />
+      <br /><br />
+      <label for="class_grade">Which class is the student?(A,B,C): </label><br />
+      <input type="text" id="class_grade" name="class_grade" required />
+      <br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
